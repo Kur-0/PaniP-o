@@ -31,7 +31,13 @@ const Usuario = mongoose.model("Usuario", UsuarioSchema);
 
 app.post("/cadastrousuario", async(req, res)=>{
     const email = req.body.email;
-    const password = req.body.password
+    const password = req.body.password;
+
+    const existingUser = await Usuario.findOne({ email });
+
+    if (existingUser) {
+        return res.status(400).json({ error: "Usuário com este email já cadastrado." });
+    }
 
 
     const usuario = new Usuario({
@@ -80,7 +86,13 @@ const ProdutopaoSchema = new mongoose.Schema({
     else if(quantidadeEstoque <= 0){
         return res.status(400).json({error : "O estoque não pode ser nulo ou negativo! Por favor, insira um valor de estoque entre 1 e 36. "});
     }
- 
+
+    const existingProduct = await Produtopao.findOne({ id_produtopao });
+
+    if (existingProduct) {
+        return res.status(400).json({ error: "Produto com este id já cadastrado." });
+    }
+
  
      const produtopao = new Produtopao({
          id_produtopao : id_produtopao,

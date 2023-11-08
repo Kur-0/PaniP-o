@@ -1,0 +1,30 @@
+#logopao{
+    width: 100px;
+    height: 100px;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#navbarpao{
+    background-color: rgb(240, 160, 41);
+}
+
+
+
+
+#cards{
+    margin-bottom: 100px;
+}
+
+footer{
+    background-color: rgb(240, 160, 41);
+}
+
+.btn{
+    background-color: rgb(240, 160, 41);
+}

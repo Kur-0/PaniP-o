@@ -3,31 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css">
     <title>PaniPão</title>
 </head>
-<body>
-    <body style="height:1500px">
+<body> 
+    <head>
+      <div class="logo">
+      <img src="logopao.png" alt="LOGO" id="logopao">
+      </div>
 
-        <div class="container-fluid mt-3">
-          <br>
-          <h3>Sticky Navbar</h3>
-          <p>A sticky navigation bar stays fixed at the top of the page when you scroll past it.</p>
-          <p>Scroll this page to see the effect. <strong>Note:</strong> sticky-top does not work in IE11 and earlier.</p>
+      <nav id="navbarpao" class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">PaniPão</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="cadastrousuario">Entrar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="cadastroprodutopao">Cadastro Produto</a>
+            </li>
+          </ul>
         </div>
-        
-        <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#">Sticky top</a>
+      </nav>
+    </head>
+
+
+<main>
+      <div class="carouselw">
+        <div id="carouselExampleDark" class="carousel carousel-dark slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img id="c"
+                            src="https://img.freepik.com/free-photo/close-up-hands-holding-tray-with-bread-sticks_23-2149233685.jpg"
+                            alt="imagem" class="d-block w-100">
+                        
+
+                    </div>
+                    <div class="carousel-item">
+                        <img id="cc"
+                            src="https://img.freepik.com/free-photo/bread-crust-assortment-pastry_23-2148359129.jpg?t=st=1699444660~exp=1699445260~hmac=d564cb8f929a62901a6b97969ffbce5ca8e4c2f752e3443b3ef45cf4e67f26db"
+                            alt="imagem" class="d-block w-100">
+                        
+
+                    </div>
+                    <div class="carousel-item">
+                        <img id="ccc"
+                            src="https://img.freepik.com/free-photo/close-up-baker-holding-basket-with-bread-sticks_23-2149233688.jpg?t=st=1699444660~exp=1699445260~hmac=a93db3edb86ad511b94516d3e7b0e91b36e033d61c76eb8747446d9413a5c2d7"
+                            alt="imagem" class="d-block w-100">
+                        
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+         <!-- Cards -->
+    <div id="cards" class="container mt-4">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="https://conteudo.imguol.com.br/c/entretenimento/45/2020/10/19/pao-frances---dona-deola-1603113166267_v2_1920x1920.jpg" class="card-img-top" alt="Produto 1">
+            <div class="card-body">
+              <h5 class="card-title">Pão Francês</h5>
+              <p class="card-text">Delicioso pão francês fresco todos os dias.</p>
+            </div>
           </div>
-        </nav>
-        
-        <div class="container-fluid"><br>
-          <p>Some example text. Some example text. Some example text. Some example text. Some example text.</p>
-          <p>Some example text. Some example text. Some example text. Some example text. Some example text.</p>
-          <p>Some example text. Some example text. Some example text. Some example text. Some example text.</p>
-          <p>Some example text. Some example text. Some example text. Some example text. Some example text.</p>
         </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="https://bakeandcakegourmet.com.br/uploads/site/receitas/bolo-de-chocolate-facil-e-barato-rspxk8nc.jpg" class="card-img-top" alt="Produto 2">
+            <div class="card-body">
+              <h5 class="card-title">Bolo de Chocolate</h5>
+              <p class="card-text">Nosso bolo de chocolate é irresistível.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="https://www.estadao.com.br/resizer/FTu7JyHjyhRsSNQVx4pmeuoemss=/1200x1200/filters:format(jpg):quality(80):focal(2810x2910:2820x2920)/cloudfront-us-east-1.images.arcpublishing.com/estadao/LVHDPIGTS5HNTNTTEJXFB3HHLE.jpg" class="card-img-top" alt="Produto 3">
+            <div class="card-body">
+              <h5 class="card-title">Croissant</h5>
+              <p class="card-text">Croissants frescos e crocantes a qualquer hora.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer  class="text-white text-center py-2">
+    <p>&copy; 2023 PaniPão - Todos os direitos reservados</p>
+  </footer>
 </body>
 </html>
