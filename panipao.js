@@ -73,6 +73,13 @@ const ProdutopaoSchema = new mongoose.Schema({
      const tipo = req.body.tipo;
      const dataValidade = req.body.dataValidade;
      const quantidadeEstoque = req.body.quantidadeEstoque
+
+     if(quantidadeEstoque > 36){
+        return res.status(400).json({error : "Você atingiu o limite de estoque, não é possivel cadastrar mais deste produto!"});
+    }
+    else if(quantidadeEstoque <= 0){
+        return res.status(400).json({error : "O estoque não pode ser nulo ou negativo! Por favor, insira um valor de estoque entre 1 e 36. "});
+    }
  
  
      const produtopao = new Produtopao({
